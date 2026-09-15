@@ -39,3 +39,6 @@ ENV/
 .vscode/
 .idea/
 *.swp
+
+# Data directory
+data/
