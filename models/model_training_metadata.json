@@ -1,0 +1,126 @@
+{
+    "training_timestamp": "2026-09-19 09:25:17",
+    "random_seed": 42,
+    "dataset_records": {
+        "training_rows": 36605,
+        "validation_rows": 7829,
+        "test_rows": 7827,
+        "number_of_features": 47
+    },
+    "dataset_filenames": {
+        "train": "feature_engineered_train_dataset.csv",
+        "test": "feature_engineered_test_dataset.csv"
+    },
+    "models": {
+        "Logistic_Regression": {
+            "hyperparameters": {
+                "C": 1.0,
+                "class_weight": null,
+                "dual": false,
+                "fit_intercept": true,
+                "intercept_scaling": 1,
+                "l1_ratio": 0.0,
+                "max_iter": 1000,
+                "n_jobs": null,
+                "penalty": "deprecated",
+                "random_state": 42,
+                "solver": "lbfgs",
+                "tol": 0.0001,
+                "verbose": 0,
+                "warm_start": false
+            }
+        },
+        "Random_Forest": {
+            "hyperparameters": {
+                "bootstrap": true,
+                "ccp_alpha": 0.0,
+                "class_weight": null,
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": "sqrt",
+                "max_leaf_nodes": null,
+                "max_samples": null,
+                "min_impurity_decrease": 0.0,
+                "min_samples_leaf": 1,
+                "min_samples_split": 2,
+                "min_weight_fraction_leaf": 0.0,
+                "monotonic_cst": null,
+                "n_estimators": 300,
+                "n_jobs": -1,
+                "oob_score": false,
+                "random_state": 42,
+                "verbose": 0,
+                "warm_start": false
+            }
+        },
+        "XGBoost_Classifier": {
+            "hyperparameters": {
+                "n_estimators": 300,
+                "learning_rate": 0.05,
+                "max_depth": 6,
+                "subsample": 0.8,
+                "colsample_bytree": 0.8,
+                "objective": "binary:logistic"
+            }
+        }
+    },
+    "evaluation_metrics": {
+        "model_comparison_summary": [
+            {
+                "Model": "XGBoost Classifier",
+                "Top-1": 0.6567,
+                "Top-3": 0.9101,
+                "Top-5": 0.97,
+                "MRR": 0.7894,
+                "NDCG@5": 0.8118,
+                "Accuracy": 0.9547719432732849,
+                "ROC-AUC": 0.9408235373106772,
+                "PR-AUC": 0.627683275708469
+            },
+            {
+                "Model": "Random Forest",
+                "Top-1": 0.6621,
+                "Top-3": 0.891,
+                "Top-5": 0.9673,
+                "MRR": 0.7883,
+                "NDCG@5": 0.8037,
+                "Accuracy": 0.956560623482816,
+                "ROC-AUC": 0.945975611120747,
+                "PR-AUC": 0.6559735836902489
+            },
+            {
+                "Model": "LightGBM Classifier",
+                "Top-1": 0.5967,
+                "Top-3": 0.8719,
+                "Top-5": 0.9564,
+                "MRR": 0.744,
+                "NDCG@5": 0.7677,
+                "Accuracy": 0.9504280056215664,
+                "ROC-AUC": 0.9297250306329696,
+                "PR-AUC": 0.5695992091397191
+            },
+            {
+                "Model": "Historical Baseline",
+                "Top-1": 0.5313,
+                "Top-3": 0.8147,
+                "Top-5": 0.921,
+                "MRR": 0.6914,
+                "NDCG@5": 0.7134,
+                "Accuracy": 0.9407180273412546,
+                "ROC-AUC": 0.8892571994472078,
+                "PR-AUC": 0.3065260853125059
+            },
+            {
+                "Model": "Logistic Regression",
+                "Top-1": 0.5422,
+                "Top-3": 0.7956,
+                "Top-5": 0.8992,
+                "MRR": 0.6902,
+                "NDCG@5": 0.7065,
+                "Accuracy": 0.9458285422256292,
+                "ROC-AUC": 0.9060753990678624,
+                "PR-AUC": 0.4558310409962849
+            }
+        ]
+    }
+}
