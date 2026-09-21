@@ -1,31 +1,31 @@
 {
-    "tuning_timestamp": "2026-09-20 12:25:04",
+    "tuning_timestamp": "2026-09-21 15:35:00",
     "framework": "Optuna",
     "sampler": "TPE",
     "objective_metric": "NDCG@5 on validation set",
     "test_set_status": "UNTOUCHED during optimization",
     "xgb_best_params": {
-        "n_estimators": 500,
-        "learning_rate": 0.16355493474708033,
-        "max_depth": 7,
-        "min_child_weight": 5,
-        "subsample": 0.691361532073299,
-        "colsample_bytree": 0.6075350817982986,
-        "gamma": 0.16796205152370952,
-        "reg_alpha": 0.7032782852617623,
-        "reg_lambda": 1.8620154008254997
+        "n_estimators": 400,
+        "learning_rate": 0.09108180232178145,
+        "max_depth": 8,
+        "min_child_weight": 1,
+        "subsample": 0.9019909933539483,
+        "colsample_bytree": 0.7356747274714761,
+        "gamma": 0.24364539332575133,
+        "reg_alpha": 0.7061010163332531,
+        "reg_lambda": 0.9590937126826384
     },
-    "xgb_best_val_ndcg5": 0.8307,
-    "xgb_test_ndcg5": 0.8443,
-    "xgb_test_improvement_over_baseline": 0.02760000000000007,
+    "xgb_best_val_ndcg5": 0.6969,
+    "xgb_test_ndcg5": 0.7253,
+    "xgb_test_improvement_over_baseline": 0.08919999999999995,
     "rf_best_params": {
-        "n_estimators": 200,
-        "max_depth": 14,
-        "min_samples_split": 8,
-        "min_samples_leaf": 12,
-        "max_features": "log2"
+        "n_estimators": 300,
+        "max_depth": 19,
+        "min_samples_split": 36,
+        "min_samples_leaf": 10,
+        "max_features": 0.7
     },
-    "rf_best_val_ndcg5": 0.8117,
-    "rf_test_ndcg5": 0.8118,
-    "rf_test_improvement_over_baseline": 0.0016999999999999238
+    "rf_best_val_ndcg5": 0.6466,
+    "rf_test_ndcg5": 0.6535,
+    "rf_test_improvement_over_baseline": 0.05359999999999998
 }
